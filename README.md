@@ -336,3 +336,77 @@ task-flow/
 ├── .gitignore                           # 🙈 Main Git Ignore
 └── README.md                            # 📖 Main Documentation
 ```
+
+## 📖 Usage Guide
+
+### 1. Register & Login
+- Open the application at `http://localhost:3000`
+- Click **Register** to create a new account
+- Enter username, email, password, and select role
+- Login using your credentials
+
+### 2. Create a Board
+- Navigate to **Boards** page from sidebar
+- Click **Create Board** button
+- Enter board name and select board type:
+  - **Scrum** - Sprint-based development (TODO → IN_PROGRESS → REVIEW → DONE)
+  - **Kanban** - Continuous workflow (TODO → IN_PROGRESS → DONE)
+- Click **Create** to save
+
+### 3. Create Issues / Tasks
+- Navigate to **Backlog** page
+- Click **Create Issue** button
+- Enter title, description, select type (Task/Bug/Story)
+- Select priority (High/Medium/Low)
+- Click **Create Issue** to save to backlog
+
+### 4. Move Issues to Board
+- In Backlog page, click **Move to Board** on any issue
+- Select a board from the dropdown
+- Issue will appear on the selected board in TODO column
+
+### 5. Update Task Status (Drag & Drop)
+- Go to **Boards** page and select a board
+- Drag and drop cards between columns:
+  - **Scrum**: TODO → IN_PROGRESS → REVIEW → DONE
+  - **Kanban**: TODO → IN_PROGRESS → DONE
+- Status updates automatically
+
+### 6. Create and Manage Sprints (Scrum only)
+- Navigate to **Sprints** page
+- Click **Create Sprint** button
+- Enter sprint name, start date, end date, and goal
+- Select a Scrum board
+- Click **Create Sprint**
+- Click **Start Sprint** when ready
+
+### 7. Track Progress
+- View **Dashboard** for project overview
+- Check **Sprints** page for sprint progress
+- Monitor task statistics on Dashboard:
+  - Total boards
+  - Backlog items
+  - Completed/In progress tasks
+  - Active sprints
+
+### 8. Use AI Assistant
+- Navigate to **AI Assistant** page
+- Ask questions like:
+  - "Show me project overview"
+  - "How many tasks are pending?"
+  - "What's my sprint progress?"
+  - "Give me recommendations"
+  - "Show my boards"
+
+### 9. Manage Notifications
+- Click **Notifications** bell icon
+- View all notifications
+- Mark as read/unread
+- Delete notifications
+- Delete multiple notifications (select mode)
+
+### 10. Search & Filter Issues
+- In **Backlog** page, use search bar to find issues by title/description
+- Filter by priority (High/Medium/Low/All)
+- Filter by type (Task/Bug/Story/All)
+- Results update automatically
