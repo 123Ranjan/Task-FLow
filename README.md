@@ -20,9 +20,6 @@ A full-stack task management system for planning, tracking, and managing softwar
 - [Project Structure](#-project-structure)
 - [API Documentation](#-api-documentation)
 - [Screenshots](#-screenshots)
-- [Contributing](#-contributing)
-- [License](#-license)
-
 ---
 
 ## ✨ Features
@@ -472,7 +469,8 @@ task-flow/
 - `GET /api/issues/upcoming/` – Get tasks due in next 7 days
 - `GET /api/issues/by-date/{date}/` – Get tasks for a specific date
 - `GET /api/issues/statistics/` – Get date-based task statistics
-## 🖼️ Application Screenshots
+  
+## 🖼️ Screenshots
 
 <div align="center">
 
@@ -485,7 +483,7 @@ task-flow/
 
 ---
 
-### 📊 Dashboard & Overview
+### 📊 Dashboard
 
 <img width="800" alt="Dashboard" src="https://github.com/user-attachments/assets/c7f89fa0-00dd-45cf-b972-514d7a51d081" />
 
@@ -493,7 +491,7 @@ task-flow/
 
 ---
 
-### 🎯 Board Management
+### 🎯 Boards
 
 | Create Board | Board View |
 |:---:|:---:|
@@ -502,7 +500,7 @@ task-flow/
 
 ---
 
-### 📋 Backlog Management
+### 📋 Backlog
 
 <img width="800" alt="Backlog" src="https://github.com/user-attachments/assets/fe6ca6f0-cb9d-48f2-adff-c5a6f1a9b96e" />
 
@@ -510,9 +508,9 @@ task-flow/
 
 ---
 
-### 🏃 Sprint Management
+### 🏃 Sprints
 
-<img width="800" alt="Sprint Management" src="https://github.com/user-attachments/assets/56514c2f-c606-495f-bcaf-93148c0e0d6c" />
+<img width="800" alt="Sprints" src="https://github.com/user-attachments/assets/56514c2f-c606-495f-bcaf-93148c0e0d6c" />
 
 *Active sprint tracking with progress visualization*
 
@@ -534,14 +532,13 @@ task-flow/
 
 ---
 
-### 👤 User Profile
+### 👤 Profile
 
-<img width="800" alt="User Profile" src="https://github.com/user-attachments/assets/6d246357-805b-4f42-a00a-327524bdc8b3" />
+<img width="800" alt="Profile" src="https://github.com/user-attachments/assets/6d246357-805b-4f42-a00a-327524bdc8b3" />
 
 *User profile management and settings*
 
 </div>
-
 ---
 
 ## 📱 Features Showcased
@@ -559,6 +556,6 @@ task-flow/
 
 
 > 💡 *All screenshots show the actual working interface of the Task Management System with real data and interactions.*
->
+
 > Made with ❤️ by Ranjan  
 ⭐ If this project will help you, give a star to this repo
