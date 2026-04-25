@@ -410,3 +410,65 @@ task-flow/
 - Filter by priority (High/Medium/Low/All)
 - Filter by type (Task/Bug/Story/All)
 - Results update automatically
+
+## 📚 API Documentation
+
+#### Authentication
+
+- `POST /api/register/` – Register new user
+- `POST /api/login/` – User login (returns JWT token)
+- `GET /api/profile/` – Get current user profile
+- `PUT /api/profile/update/` – Update user profile
+
+#### Boards
+
+- `GET /api/boards/` – List all boards
+- `POST /api/boards/create_board/` – Create new board
+- `GET /api/boards/{id}/` – Get board details
+- `DELETE /api/boards/{id}/delete/` – Delete board
+- `GET /api/boards/{id}/columns/` – Get board columns
+- `GET /api/boards/{id}/issues/` – Get issues for a board
+
+#### Backlog & Issues
+
+- `GET /api/issues/backlog/` – Get all backlog issues
+- `POST /api/issues/create/` – Create new issue
+- `GET /api/issues/{id}/` – Get issue details
+- `DELETE /api/issues/{id}/` – Delete issue
+- `PATCH /api/issues/{id}/status/` – Update issue status
+- `PATCH /api/issues/{id}/move-to-board/` – Move issue to board
+- `PATCH /api/issues/{id}/move-to-backlog/` – Move issue back to backlog
+- `PATCH /api/issues/{id}/assign-to-sprint/` – Assign issue to sprint
+
+#### Sprints
+
+- `GET /api/sprints/` – List all sprints
+- `POST /api/sprints/create/` – Create a new sprint
+- `GET /api/sprints/{id}/issues/` – Get issues in a sprint
+- `PUT /api/sprints/{id}/start/` – Start a sprint
+- `PUT /api/sprints/{id}/close/` – Complete a sprint
+- `DELETE /api/sprints/{id}/delete/` – Delete a sprint
+
+#### Notifications
+
+- `GET /api/notifications/` – Get all notifications
+- `PUT /api/notifications/{id}/read/` – Mark notification as read
+- `PUT /api/notifications/read-all/` – Mark all notifications as read
+- `DELETE /api/notifications/{id}/` – Delete a notification
+
+#### AI Assistant
+
+- `POST /api/ai/chat/` – Send message to AI assistant
+- `GET /api/ai/suggestions/` – Get suggested questions
+
+#### Board Cards (Drag & Drop)
+
+- `GET /api/boardCard/board/{board_id}/` – Get all cards for a board
+- `PUT /api/boardCard/{card_id}/move/{column_id}/` – Move card to a column
+
+#### Date/Time Endpoints
+
+- `GET /api/issues/overdue/` – Get overdue tasks
+- `GET /api/issues/upcoming/` – Get tasks due in next 7 days
+- `GET /api/issues/by-date/{date}/` – Get tasks for a specific date
+- `GET /api/issues/statistics/` – Get date-based task statistics
