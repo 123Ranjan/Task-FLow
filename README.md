@@ -227,4 +227,112 @@ npm start
 Frontend will be available at:
 http://localhost:3000 
 
-
+## 📁 Project Structure
+```
+task-flow/
+│
+├── 📁 backend/                          # Django Backend
+│   ├── 📁 task_management/              # Main Django Project
+│   │   ├── __init__.py
+│   │   ├── settings.py                  # ⚙️ Main Configuration
+│   │   ├── urls.py                      # 🌐 Main URL Routing
+│   │   ├── asgi.py                      # ASGI Configuration
+│   │   └── wsgi.py                      # 🚀 WSGI Configuration
+│   │
+│   ├── 📁 users/                        # 👤 User Management
+│   │   ├── 📁 migrations/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── models.py                    # 🗃️ User Model
+│   │   ├── views.py                     # 🔐 Auth Views (Login/Register/Profile)
+│   │   ├── urls.py                      # 🌐 Auth Routes
+│   │   ├── serializers.py               # 📦 User Serializers
+│   │   └── authentication.py            # 🔑 JWT Authentication
+│   │
+│   ├── 📁 boards/                       # 📊 Board Management
+│   │   ├── 📁 migrations/
+│   │   ├── __init__.py
+│   │   ├── models.py                    # 🗃️ Board Model (Scrum/Kanban)
+│   │   ├── views.py                     # 🎯 Board Operations
+│   │   ├── urls.py                      # 🌐 Board Routes
+│   │   └── serializers.py               # 📦 Board Serializers
+│   │
+│   ├── 📁 issues/                       # 🐛 Issue/Backlog Management
+│   │   ├── 📁 migrations/
+│   │   ├── __init__.py
+│   │   ├── models.py                    # 🗃️ Issue & Comment Models
+│   │   ├── views.py                     # 📋 Backlog & Issue Operations
+│   │   ├── urls.py                      # 🌐 Issue Routes
+│   │   └── serializers.py               # 📦 Issue Serializers
+│   │
+│   ├── 📁 sprints/                      # 🏃 Sprint Management
+│   │   ├── 📁 migrations/
+│   │   ├── __init__.py
+│   │   ├── models.py                    # 🗃️ Sprint Model
+│   │   ├── views.py                     # 🏃 Sprint Operations
+│   │   ├── urls.py                      # 🌐 Sprint Routes
+│   │   └── serializers.py               # 📦 Sprint Serializers
+│   │
+│   ├── 📁 notifications/                # 🔔 Notifications
+│   │   ├── 📁 migrations/
+│   │   ├── __init__.py
+│   │   ├── models.py                    # 🗃️ Notification Model
+│   │   ├── views.py                     # 🔔 Notification Operations
+│   │   └── urls.py                      # 🌐 Notification Routes
+│   │
+│   ├── 📁 ai/                           # 🤖 AI Assistant
+│   │   ├── 📁 migrations/
+│   │   ├── __init__.py
+│   │   ├── views.py                     # 🧠 Smart AI Responses
+│   │   └── urls.py                      # 🌐 AI Routes
+│   │
+│   ├── 📁 templates/                    # 🖼️ Django Templates
+│   │
+│   ├── manage.py                        # 🚀 Django Management Script
+│   └── requirements.txt                 # 📦 Python Dependencies
+│
+├── 📁 frontend/                         # ⚛️ React Frontend
+│   ├── 📁 public/
+│   │   └── index.html                   # 🖼️ Main HTML File
+│   │
+│   ├── 📁 src/
+│   │   ├── 📁 api/
+│   │   │   └── axios.js                 # 🌐 HTTP Client Setup
+│   │   │
+│   │   ├── 📁 components/
+│   │   │   ├── Layout.jsx               # 🧭 Main Layout (Sidebar + Header)
+│   │   │   └── ProtectedRoute.jsx       # 🔐 Route Protection
+│   │   │
+│   │   ├── 📁 pages/
+│   │   │   ├── LoginPage.jsx            # 🔑 Login Interface
+│   │   │   ├── RegisterPage.jsx         # 📝 Registration Interface
+│   │   │   ├── Dashboard.jsx            # 📊 Main Dashboard
+│   │   │   ├── BoardsPage.jsx           # 🎯 Board Management
+│   │   │   ├── BoardView.jsx            # 👁️ Board Detail View
+│   │   │   ├── CreateBoard.jsx          # ✨ Create New Board
+│   │   │   ├── BacklogPage.jsx          # 📋 Backlog Management
+│   │   │   ├── SprintPage.jsx           # 🏃 Sprint Planning
+│   │   │   ├── AIChatPage.jsx           # 🤖 AI Assistant
+│   │   │   ├── NotificationsPage.jsx    # 🔔 Notifications Center
+│   │   │   └── ProfilePage.jsx          # 👤 User Profile
+│   │   │
+│   │   ├── 📁 utils/
+│   │   │   └── permissions.js           # 🔐 Permission Helpers
+│   │   │
+│   │   ├── App.js                       # ⚛️ Main Application Component
+│   │   ├── App.css                      # 🎨 App Styles
+│   │   ├── index.js                     # 🎬 Application Entry Point
+│   │   ├── index.css                    # 🌍 Global Styles
+│   │   ├── logo.svg                     # 🖼️ Logo Asset
+│   │   ├── reportWebVitals.js           # 📊 Performance Metrics
+│   │   └── setupTests.js                # 🧪 Test Setup
+│   │
+│   ├── .gitignore                       # 🙈 Git Ignore Rules
+│   ├── package.json                     # 📦 Frontend Dependencies
+│   ├── package-lock.json                # 🔒 Lockfile
+│   ├── README.md                        # 📖 Frontend Documentation
+│   └── tailwind.config.js               # 🎨 Tailwind CSS Config
+│
+├── .gitignore                           # 🙈 Main Git Ignore
+└── README.md                            # 📖 Main Documentation
+```
