@@ -472,3 +472,93 @@ task-flow/
 - `GET /api/issues/upcoming/` – Get tasks due in next 7 days
 - `GET /api/issues/by-date/{date}/` – Get tasks for a specific date
 - `GET /api/issues/statistics/` – Get date-based task statistics
+## 🖼️ Application Screenshots
+
+<div align="center">
+
+### 🔐 Authentication
+
+| Login Page | Registration |
+|:---:|:---:|
+| <img width="500" alt="Login Page" src="https://github.com/user-attachments/assets/d18bb401-389f-4515-a10a-16373d31b5de" /> | <img width="500" alt="Registration Page" src="https://github.com/user-attachments/assets/82b2e7b4-0cfd-4587-8b10-1b9b51d6fab2" /> |
+| *Secure JWT-based login interface* | *User registration with role selection* |
+
+---
+
+### 📊 Dashboard & Overview
+
+<img width="800" alt="Dashboard" src="https://github.com/user-attachments/assets/c7f89fa0-00dd-45cf-b972-514d7a51d081" />
+
+*Main dashboard showing project statistics, recent activity, and team overview*
+
+---
+
+### 🎯 Board Management
+
+| Create Board | Board View |
+|:---:|:---:|
+| <img width="400" alt="Create Board" src="https://github.com/user-attachments/assets/26830cfe-14a6-41b0-b061-bf5aff86ebc0" /> | <img width="400" alt="Board View" src="https://github.com/user-attachments/assets/d2d2b3ff-01ef-4d7f-b00d-02a83480efc9" /> |
+| *Create new board interface* | *Interactive Kanban board with drag-and-drop* |
+
+---
+
+### 📋 Backlog Management
+
+<img width="800" alt="Backlog" src="https://github.com/user-attachments/assets/fe6ca6f0-cb9d-48f2-adff-c5a6f1a9b96e" />
+
+*Product backlog with prioritization and issue tracking*
+
+---
+
+### 🏃 Sprint Management
+
+<img width="800" alt="Sprint Management" src="https://github.com/user-attachments/assets/56514c2f-c606-495f-bcaf-93148c0e0d6c" />
+
+*Active sprint tracking with progress visualization*
+
+---
+
+### 🤖 AI Assistant
+
+<img width="800" alt="AI Assistant" src="https://github.com/user-attachments/assets/aa6b7da0-6bba-4dc7-9975-75acaefc2614" />
+
+*Smart AI assistant for project insights and recommendations*
+
+---
+
+### 🔔 Notifications
+
+<img width="800" alt="Notifications" src="https://github.com/user-attachments/assets/9c2eff54-bda7-40a1-8aa7-b29a4ba82f00" />
+
+*Real-time notification center with activity feed*
+
+---
+
+### 👤 User Profile
+
+<img width="800" alt="User Profile" src="https://github.com/user-attachments/assets/6d246357-805b-4f42-a00a-327524bdc8b3" />
+
+*User profile management and settings*
+
+</div>
+
+---
+
+## 📱 Features Showcased
+
+| Feature | Description |
+|---------|-------------|
+| 🔐 **Authentication** | Secure JWT-based login and registration |
+| 📊 **Dashboard** | Project statistics and activity overview |
+| 🎯 **Boards** | Scrum & Kanban boards with drag-and-drop |
+| 📋 **Backlog** | Issue tracking with priorities and types |
+| 🏃 **Sprints** | Sprint planning and progress tracking |
+| 🤖 **AI Assistant** | Smart project insights and recommendations |
+| 🔔 **Notifications** | Real-time alerts and updates |
+| 👤 **Profile** | User profile management |
+
+
+> 💡 *All screenshots show the actual working interface of the Task Management System with real data and interactions.*
+>
+> Made with ❤️ by Ranjan  
+⭐ If this project will help you, give a star to this repo
