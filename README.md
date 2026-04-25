@@ -122,3 +122,109 @@ npm --version
 
 # Check MySQL version
 mysql --version
+
+## 🚀 Installation
+### Step 1: Clone the Repository
+```git clone https://github.com/yourusername/task-management-system.git
+cd task-management-system
+```
+### Step 2: Backend Setup
+``` python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+```
+### Step 3: Frontend Setup
+### 3.1 Navigate to Frontend Directory
+```
+cd frontend
+```
+### 3.2 Install Node Dependencies
+```
+npm install
+```
+### Step 4: MySQL Setup
+#### 4.1 Start MySQL Service
+```
+# Windows
+net start MySQL
+
+# macOS
+brew services start mysql
+
+# Linux
+sudo systemctl start mysql
+```
+### 4.2 Verify MySQL is Running
+```
+mysql --version
+```
+## ⚙️ Configuration
+### Backend Configuration
+Create an application.properties file in:
+```
+cd backend/src/main/resources
+```
+Edit application.properties with the following content:
+
+```
+# MySQL Configuration
+# MySQL Configuration
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'taskManagement',
+        'USER': 'root',
+        'PASSWORD': 'yourpassword',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+# JWT Configuration
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=7),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=30),
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True,
+    'ALGORITHM': 'HS256',
+    'SIGNING_KEY': SECRET_KEY,
+    'AUTH_HEADER_TYPES': ('Bearer',),
+}
+```
+### Frontend Configuration
+Create a .env file in the frontend/ directory:
+```
+cd frontend
+```
+Create frontend/.env file with the following content:
+# API Base URL
+REACT_APP_API_URL=http://127.0.0.1:8000
+
+## 🏃 Running the Application
+### Step 1: Start MySQL
+
+Make sure MySQL service is running (see MySQL Setup section)
+### Step 2: Start Backend Server
+```# Navigate to backend directory
+cd backend
+
+# Navigate to project root directory
+cd task-flow
+
+# Start Django server
+python manage.py runserver
+```
+### Step 3: Start Frontend Development Server
+Open a new terminal and run:
+```
+# Navigate to frontend directory
+cd frontend
+
+# Start React development server
+npm start
+```
+Frontend will be available at:
+http://localhost:3000 
+
+
